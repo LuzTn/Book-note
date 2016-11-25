@@ -15,7 +15,7 @@ gem 'paperclip', '~> 5.1'
 gem 'font-awesome-rails'
 #gem 'therubyracer', '~> 0.12.2'
 gem 'sdoc', '~> 0.4.0', group: :doc
-
+gem 'rails_12factor', group: :production
 
 
 group :development, :test do
@@ -36,5 +36,4 @@ group :development do
 end
 group :production do
     gem 'pg'
-    gem 'rails_12factor'
 end
