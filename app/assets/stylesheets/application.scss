@@ -1,0 +1,73 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+@import "bootstrap-sprockets";
+@import "bootstrap";
+@import "font-awesome";
+*{
+		font-family: 'PT Sans Narrow', sans-serif;
+}
+body {
+	font-family: 'PT Sans Narrow', sans-serif;
+	margin: 0;
+	padding: 1.5em 1.25em;
+	text-decoration: none;
+}
+.book, .book-show{
+	height: 350px;
+	width: 250px;
+	
+    image-rendering: -moz-crisp-edges;
+    /* Firefox */
+    image-rendering: -o-crisp-edges;
+    /* Opera */
+    image-rendering: -webkit-optimize-contrast;
+    /* Webkit (non-standard naming) */
+    image-rendering: crisp-edges;
+    -ms-interpolation-mode: nearest-neighbor;
+    /* IE (non-standard property) */}
+.review {
+	/*border: 1px solid black;*/
+	border-radius: 3px;
+	box-shadow: 3px 3px 5px 6px #ccc;
+	padding: 1.5em 1.25em;
+
+}
+.quotes {
+	text-align: center;
+	font-family: 'Dancing Script', cursive;
+	font-size: 20px;
+}
+
+.description {
+font-family: 'Dosis', sans-serif;
+}
+.author{
+	font-family: 'Dancing Script', cursive;
+	font-size: 30px;
+}
+
+h2 .title {
+	font-family: 'Dancing Script', cursive;
+	font-size: 30px;
+}
+.links {
+	text-decoration: none !important;
+}
+.upload {
+	padding-top: 10px;
+   
+    padding-bottom: 10px;
+}

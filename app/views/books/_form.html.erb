@@ -1,0 +1,16 @@
+ <%= simple_form_for @book do |f| %>
+ <%= select_tag(:category_id, options_for_select(@categories), :prompt => "Choose the book's category") %>
+ <div class="upload">
+ <i class="fa fa-upload" aria-hidden="true"></i>
+ <i class="fa fa-file-image-o" aria-hidden="true"></i>
+ <%= f.file_field :book_img, style: "display:inline-block;" %>
+ </div>
+  <%= f.input :title, label: "Title" %>
+  <%= f.input :author %>
+
+ <%= f.input :description %>
+ <div >
+<%= f.button :submit,class: "btn-success"%>
+
+</div>
+ <% end %>
