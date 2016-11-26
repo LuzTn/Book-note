@@ -25,21 +25,20 @@ body {
 	padding: 1.5em 1.25em;
 	text-decoration: none;
 }
-.book, .book-show{
+.book{
 	height: 350px;
 	width: 250px;
-	
-    image-rendering: -moz-crisp-edges;
-    /* Firefox */
-    image-rendering: -o-crisp-edges;
-    /* Opera */
-    image-rendering: -webkit-optimize-contrast;
-    /* Webkit (non-standard naming) */
-    image-rendering: crisp-edges;
-    -ms-interpolation-mode: nearest-neighbor;
-    /* IE (non-standard property) */}
+	}
+	.book-show {
+	height: 475px;
+	width: 325px;
+image-rendering: -moz-crisp-edges;
+
+
+	}
 .review {
 	/*border: 1px solid black;*/
+	
 	border-radius: 3px;
 	box-shadow: 3px 3px 5px 6px #ccc;
 	padding: 1.5em 1.25em;
@@ -70,4 +69,9 @@ h2 .title {
 	padding-top: 10px;
    
     padding-bottom: 10px;
+}
+.book-description{
+	border: 1px solid black;
+	border-radius: 5px;
+	padding: 5px 5px 5px 5px;
 }
