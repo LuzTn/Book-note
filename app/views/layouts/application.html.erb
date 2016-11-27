@@ -22,7 +22,7 @@
        <div style="font-family: 'PT Sans Narrow', sans-serif;">
       <ul class="nav navbar-nav">
         <li>
-          <%= link_to "Sign up", new_user_registration_path %>
+          <span class="glyphicon glyphicon-user"></span><%= link_to "Sign up", new_user_registration_path, style: "display: inline-block;"%>
         </li>
         <% if user_signed_in? %>
           <li>
@@ -30,7 +30,7 @@
           </li>
           <% else %>
             <li>
-              <%= link_to "Log in", new_user_session_path%>
+           <span class="glyphicon glyphicon-log-in"></span> <%= link_to "Log in", new_user_session_path, style: "display: inline-block;"%>
             </li>
             <% end %>
       </ul>
@@ -66,11 +66,17 @@
   <p class="notice">
     <%= notice %>
     <div>
-    <div class="quotes"><strong class="quotes" style="font-size: 30px;">“So many books, so little time.”</strong> ― Frank Zappa</div>
-    <div class="quotes"><strong class="quotes" style="font-size: 30px;">“I have always imagined that Paradise will be a kind of library.”</strong>
-― Jorge Luis Borges</div>
-<div class="quotes"><strong class="quotes" style="font-size: 30px;"> “Let us read, and let us dance, these two amusements will never do any harm to the world.”</strong> 
-― Voltaire</div>
+        <div class="quotes">
+            <strong class="quotes" style="font-size: 30px;">“So many books, so little time.”</strong> ― Frank Zappa
+        </div>
+        <div class="quotes">
+            <strong class="quotes" style="font-size: 30px;">“I have always imagined that Paradise will be a kind of library.”</strong>
+― Jorge Luis Borges
+        </div>
+    <div class="quotes">
+            <strong class="quotes" style="font-size: 30px;"> “Let us read, and let us dance, these two amusements will never do any harm to the world.”</strong> 
+― Voltaire
+        </div>
 </div>
   </p>
   <p class="alert">
