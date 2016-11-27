@@ -5,7 +5,16 @@
 <% if user_signed_in? %>
 
   <% if review.user_id == current_user.id %>
-    <%= link_to "Edit", edit_book_review_path(review.book, review) %>
-      <%= link_to "Delete", book_review_path(review.book, review), method: :delete, data: { confirm: "Are you sure?"} %>
+
+  <div class="btn btn-success">
+          <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+    <%= link_to "Edit", edit_book_review_path(review.book, review), style: 'color:white; text-decoration: none; background-color:transparent;'%> </div>
+
+        <div class="btn btn-danger">
+          <i class="fa fa-trash-o fa-lg"></i>
+      <%= link_to "Delete", book_review_path(review.book, review), method: :delete, data: { confirm: "Are you sure?"}, style: 'color:white; text-decoration: none; background-color:transparent;' %>
+              </div>
   <%end%>
 <%end%>
+
+       
