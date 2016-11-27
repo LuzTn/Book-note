@@ -4,15 +4,16 @@
     <%= image_tag @book.book_img.url(:book_show), class: "book-show" %>
     </div>
      <div style="padding-top:15px;">
-     <div class="btn btn-info">
-      <i class="fa fa-commenting-o" aria-hidden="true"></i>
-      <%= link_to "Add Review", new_book_review_path(@book), style: 'color:white; text-decoration: none; background-color:transparent;' , :target => "_blank"%>
-    </div>
-    <div class="btn btn-warning">
+       <div class="btn btn-warning">
       <i class="fa fa-home" aria-hidden="true"></i>
       <%= link_to "Home page", root_path, style: 'color:white; text-decoration: none; background-color:transparent;' %>
 
     </div>
+     <div class="btn btn-info">
+      <i class="fa fa-commenting-o" aria-hidden="true"></i>
+      <%= link_to "Add Review", new_book_review_path(@book), style: 'color:white; text-decoration: none; background-color:transparent;' , :target => "_blank"%>
+    </div>
+  
     <% if user_signed_in? %>
       <% if @book.user_id == current_user.id %>
         <div class="btn btn-success">
@@ -29,13 +30,13 @@
   </div>
   <div class="col-md-8">
     <div class="book-description">
-      <h2><strong class="title"><%= @book.title %></strong></h2>
-      <h3 class="author"><%= @book.author %></h3>
-      <h2>Average Rating</h2>
+      <h1><strong class="title"><%= @book.title %></strong></h2>
+      <h2 class="author"><%= @book.author %></h3>
+      <h3>Average Rating</h2>
       <div class="average-review-rating" data-score=<%= @average_review %>></div>
       <span>Based on <%= @book.reviews.count %> reviews </span>
-      <h4><strong> Category: </strong><%= @book.category.name %></h4>
-      <h3>Book suggested by: <%= @book.user.email%></h3>
+      <h3><strong> Category: </strong><%= @book.category.name %></h4>
+      <h3>Book suggested by:<span style="color: #004592;"> <%= @book.user.email%></span></h3>
       <p class="description">
         <%= @book.description %>
       </p>
@@ -44,11 +45,11 @@
 </div>
 <div class="row">
 
-  <div class="col-md-4" style="padding-top:15px;">
+  <div class="col-md-12" style="padding-top:15px;">
 
    
 
-            <div class="review">
+            <div class="review-show">
               <%= render @book.reviews %>
             </div>
   </div>

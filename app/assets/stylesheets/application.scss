@@ -26,6 +26,7 @@ body {
   margin: 0;
   padding: 1.5em 1.25em;
   text-decoration: none;
+
 }
 
 .book {
@@ -43,7 +44,9 @@ body {
   /*border: 1px solid black;*/
   border-radius: 3px;
   box-shadow: 3px 3px 5px 6px #ccc;
-  padding: 1.5em 1.25em;
+  padding: 15px 15px;
+      border-bottom: 1px solid #ccc;
+
 }
 
 .quotes {
@@ -58,12 +61,11 @@ body {
 
 .author {
   font-family: 'Dancing Script', cursive;
-  font-size: 30px;
+  color:#377f4f;
 }
-
-h2 .title {
+ .title {
   font-family: 'Dancing Script', cursive;
-  font-size: 30px;
+  color:#a12929;
 }
 
 .links {
