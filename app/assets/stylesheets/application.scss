@@ -39,13 +39,15 @@ body {
   width: 325px;
   image-rendering: -moz-crisp-edges;
 }
-
-.review {
-  /*border: 1px solid black;*/
+.review-show {
+  
   border-radius: 3px;
   box-shadow: 3px 3px 5px 6px #ccc;
+}
+.review {
+  /*border: 1px solid black;*/
   padding: 15px 15px;
-      border-bottom: 1px solid #ccc;
+ border-bottom: 1px solid #ccc;
 
 }
 
@@ -81,4 +83,9 @@ font-size: 15px;
   box-shadow: 3px 3px 5px 6px #ccc;
   border-radius: 5px;
   padding: 10px 10px;
+}
+.box {
+  box-shadow: 3px 3px 5px 6px #ccc;
+  box-sizing: border-box;
+
 }
