@@ -1,9 +1,16 @@
 <h1>Edit Book</h1>
+            <div class="box">
+
  <%= simple_form_for @book, :html => {:multipart => true} do |f| %>
  <%= f.select :category_id, @categories %>
- <%= f.file_field :book_img %>
+  <div class="upload">
+ <i class="fa fa-upload" aria-hidden="true"></i>
+ <i class="fa fa-file-image-o" aria-hidden="true"></i>
+ <%= f.file_field :book_img, style: "display:inline-block;" %>
+ </div>
  <%= f.input :title, label: "Book Title" %>
  <%= f.input :description %>
  <%= f.input :author %>
- <%= f.button :submit %>
+ <%= f.button :submit, class: 'btn-success' %>
  <% end %>
+ </div>
