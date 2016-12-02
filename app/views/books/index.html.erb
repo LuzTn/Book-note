@@ -6,7 +6,9 @@
       <% @books.each do |book| %>
         <div class="col-md-3">
           <a href="/books/<%= book.id %>">
+             <div class="img-thumbnail">
             <%= image_tag book.book_img.url(:book_index), class: "book" %>
+            </div>
           </a>
         </div>
 <% end %>
