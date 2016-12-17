@@ -2,12 +2,13 @@
 <html>
 
 <head>
-<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Proza+Libre" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Rambla" rel="stylesheet">
+  
   <title>Book Review</title>
+  
   <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track'=> true %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track'=> true %>
       <%= csrf_meta_tags %>
@@ -27,7 +28,7 @@
         <% if user_signed_in? %>
           <li>
            <i class="fa fa-sign-out" aria-hidden="true"></i>
- <%= link_to "Sign Out", destroy_user_session_path, method: :delete, style: "display: inline-block;"%>
+              <%= link_to "Sign Out", destroy_user_session_path, method: :delete, style: "display: inline-block;"%>
           </li>
           <% else %>
             <li>
@@ -80,10 +81,11 @@
         </div>
 </div>
   </p>
-  <p class="alert">
   
+  <p class="alert">  
     <%= alert %>
   </p>
+
   <div class="container">
     <%= yield %>
   </div>
